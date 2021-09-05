@@ -1,0 +1,83 @@
+.introduce-area {
+    background: url(../images/img1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.introduce-area .introduce-info  {
+    border-radius: 6px;
+    background: #E5E7EB;
+    position: relative;
+    box-shadow:  0 4px 6px 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.06);
+    margin: 0 45px;
+}
+.introduce-area .introduce-info .titleName {
+    display: block;
+    margin-right: 70px;
+    font-weight: 600;
+}
+.introduce-area .introduce-info .titleCategory {
+    display: block;
+    font-weight: 600;
+}
+ 
+
+.allDetails-area {
+    background: #F3F4F6;
+}
+.allDetails-area h4 {
+    position: relative;
+    padding-bottom: 10px;
+    color: #4B5563;
+}
+.allDetails-area h4::after {
+    content: "";
+    height: 3px;
+    width: 120px;
+    position: absolute;
+    top: 100%;
+    left: 44%;
+    background: #E5E7EB;
+}
+.allDetails-area .table-area {
+    border-radius: 0.25rem;
+    box-shadow:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.allDetails-area .table-area table {
+    width: 100%;
+    table-layout: auto;
+}
+.allDetails-area .table-area table thead {
+    background-color: #E5E7EB;
+    color: #4B5563;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.allDetails-area .table-area table tbody tr {
+    border-bottom: 1px solid #E5E7EB;
+    transition: all .2s ease;
+}
+.allDetails-area .table-area table tbody tr:hover {
+    background: #F3F4F6;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .introduce-area .introduce-info  {
+        margin: 0 5px;
+    }
+    .allDetails-area h4 {
+        font-size: large;
+        font-weight: 600;
+    }
+    .allDetails-area h4::after {
+        left: 32%;
+    }
+    .allDetails-area .table-area  {
+        width: auto;
+        overflow-x: scroll;
+    }
+}
